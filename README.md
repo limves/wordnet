@@ -1,4 +1,4 @@
-# wordnet
+# Wordnet 
 Some issues to work with the ontology
 
       wget https://archive.apache.org/dist/jena/binaries/apache-jena-3.1.0.tar.gz
@@ -10,15 +10,14 @@ Some issues to work with the ontology
 
 ## tdbloader2 to load the WordNet 3.1 data
 
-      mkdir /apache-jena-fuseki-2.4.0/db
+      mkdir /apache-jena-fuseki-2.4.0/db/wn31
       apache-jena-3.1.0/bin/tdbloader2 --loc apache-jena-fuseki-2.4.0/db/wn31 wn31.nt
 
-to test: use elephant query
-- curl -O https://raw.githubusercontent.com/lumenrobot/relex-id/master/core/elephant.sparql
-- cd jena
-- ./bin/tdbquery --loc=../fuseki/wn31 --file ../elephant.sparql º
+## To test: use elephant query
+      curl -O https://raw.githubusercontent.com/lumenrobot/relex-id/master/core/elephant.sparql
+      cd pache-jena-3.1.0
+      ./bin/tdbquery --loc=../fuseki/wn31 --file ../elephant.sparql º
 
-
-# Reference
-https://github.com/lumenrobot/relex-id
-https://github.com/limves/wordnet
+### References
+* https://github.com/lumenrobot/relex-id
+* https://github.com/limves/wordnet
